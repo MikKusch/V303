@@ -18,8 +18,8 @@ uncertainties = np.sqrt(np.diag(covariance_matrix))
 
 phase_plot = np.linspace(phase[0], phase[-1], 1000)
 
-print(*uncertainties)
 print(*params)
+print(*uncertainties)
 
 
 plt.plot(phase, amplitude1, '.', label = 'Messwerte')
