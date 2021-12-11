@@ -6,8 +6,8 @@ from scipy.optimize import curve_fit
 
 
 #Lock-In-Verstärker
-amplitude1 = np.genfromtxt('Daten1.txt', unpack = True)
-x = np.linspace(30, 360, 12)
+amplitude1 = np.genfromtxt('Daten3.txt', unpack = True)
+x = np.linspace(0, 360, 13)
 phase = np.radians(x)
 
 def f(phase,a,b,c,d):
@@ -30,7 +30,7 @@ plt.ylabel(r'$A/V$')
 
 plt.legend()
 plt.tight_layout(pad=0, h_pad=1.08, w_pad=1.08)
-#plt.savefig('Graph_1.pdf')
+plt.savefig('Graph_3.pdf')
 
 
 
